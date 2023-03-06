@@ -14,7 +14,7 @@
 
 - Use Handlebars.js as the template engine.
 
-= Use MySQL and the Sequelize ORM for the database.
+- Use MySQL and the Sequelize ORM for the database.
 
 - Have both GET and POST routes for retrieving and adding new data.
 
