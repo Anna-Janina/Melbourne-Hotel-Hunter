@@ -33,8 +33,8 @@ Review.init(
     },
     {
     sequelize,
-    modelName: 'user',
-    modelName: 'hotel',
+    freezeTableName: true,
+    modelName: 'review',
     }
 );
 

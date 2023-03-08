@@ -33,7 +33,8 @@ Hotel.init(
     },
     {
     sequelize,
-    modelName: 'user',
+    modelName: 'hotel',
+    freezeTableName:true
     }
 );
 

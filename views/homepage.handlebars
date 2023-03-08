@@ -1,4 +1,15 @@
+
 {{>header}}
 
-{{>heading}}
+{{>title}}
 
+  {{#each hotels as |hotel|}}
+    <div class="blog-posts">
+        <div class="blog-post-heading">
+            <p>{{hotel.name}}</p> 
+        </div>
+        <div class="blog-post-text">
+            {{hotel.description}}
+        </div>
+    </div>
+{{/each}}
