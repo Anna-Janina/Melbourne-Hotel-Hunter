@@ -36,6 +36,10 @@ const sess = {
 
   app.use(session(sess));
 
+  app.get('/',(req,res)=>{
+    req.render('homepage',{})
+  })
+
   sequelize.sync({force:true}).then(() => {
     app.listen(PORT, () => {
       console.log(`App listening on port ${PORT}!`);
