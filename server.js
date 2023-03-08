@@ -2,7 +2,8 @@ const express = require('express')
 const exphbs = require('express-handlebars')
 const session = require('express-session');
 const sequelize = require('./config/connection');
-var validator = require("email-validator");
+const validator = require("email-validator");
+const hotelList = require("./seeds/hotelList.json")
 
 const path = require('path');
 require('dotenv').config();
