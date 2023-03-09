@@ -18,11 +18,11 @@ const hbs = exphbs.create({});
 
 //Using JSON middlewhere to parse JSON files in requests
 app.use(express.json());
-
+app.use(express.Router())
 //Defining Views engine for the app
 app.engine('handlebars',  hbs.engine);
 app.set('view engine', 'handlebars');
- 
+
 //Definig Express tatic middlewhere to make Public folder accessible for the front-end
 app.use(express.static(path.join(__dirname, 'public')));
 // app.use(require('./controller/routes'));
