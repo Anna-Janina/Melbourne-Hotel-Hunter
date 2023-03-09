@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(190, 127, 10);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}   
+
+.row {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
