@@ -1,0 +1,16 @@
+
+{{>header}}
+
+{{>title}}
+
+  {{#each hotels as |hotel|}}
+    <div class="">
+        <div class="">
+            <p>{{hotel.name}}</p> 
+            <p>{{hotel.address}}</p> 
+        </div>
+        <div class="">
+            {{hotel.description}}
+        </div>
+    </div>
+{{/each}}
