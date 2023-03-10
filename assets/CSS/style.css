@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(190, 127, 10);
+    background-color: rgb(252, 255, 255);
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 20px;
@@ -11,8 +11,12 @@ body {
     padding-top: 20px;
 }
 
-/* #one, #two, #three, #four {
-    background: url("");
-    background-size: no-repeat;
-    background-size: center;
-} */
+.image {
+    height: 10rem;
+    width: 17rem;
+    
+    background-size: cover;
+  
+    background-color: aliceblue;
+  
+}
