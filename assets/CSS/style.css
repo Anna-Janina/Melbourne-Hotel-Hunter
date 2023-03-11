@@ -20,3 +20,66 @@ body {
     background-color: aliceblue;
   
 }
+
+
+.signup-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.signup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.signup-content h2 {
+    margin-top: 0;
+
+}
+
+.signup-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.signup-content label {
+    margin-bottom: 10px;
+
+}
+
+.signup-content input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+
+}
+
+.signup-content button {
+    background-color: green;
+    color: brown;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.signup-content button:hover {
+    background-color: antiquewhite;
+}
+
