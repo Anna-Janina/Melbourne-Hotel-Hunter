@@ -13,13 +13,12 @@ body {
     padding-top: 20px;
 }
 
+#middle-grid
+{
+   display: flex;
+   justify-content: center; 
+}
 .image {
-<<<<<<< HEAD
     background-size:cover;
     background-color: aliceblue;
 }
-=======
-    background-size: cover;
-    background-color: aliceblue;
-}
->>>>>>> a84c22e1a21eae64d1dd8780ab1fbdb8fd38712b

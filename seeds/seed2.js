@@ -1,13 +1,17 @@
-const {User, Review,Hotel} = require('../models/index');
+const {User, Review,Hotel} = require('../models/');
 const sequelize = require('../config/connection');
-const hotelList = require('./hotelList.json')
+const hotelList = require('./hotelList.json');
+const userList = require('./userData.json');
+const review = require('./review.json');
 
 
 async function sync ()
 {
-    await sequelize.sync({ force: true });
-    await Hotel.bulkCreate({hotelList})
+    await sequelize.sync({force:true});
+    await Hotel.bulkCreate(hotelList)
+    await User.bulkCreate(userList)
+    await Review.bulkCreate(review)
+
 }
 
 sync()
-
