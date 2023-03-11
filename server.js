@@ -7,6 +7,8 @@ const hotelList = require("./seeds/hotelList.json")
 const path = require('path');
 require('dotenv').config();
 const {Hotel, Review, User} = require('./models/index');
+const routes = require('./controller');
+
 
 //Initializing Express
 const app = express();
@@ -18,10 +20,13 @@ const hbs = exphbs.create({});
 
 //Using JSON middlewhere to parse JSON files in requests
 app.use(express.json());
+
 app.use(express.Router())
+
 //Defining Views engine for the app
 app.engine('handlebars',  hbs.engine);
 app.set('view engine', 'handlebars');
+app.use(routes);
 
 //Definig Express tatic middlewhere to make Public folder accessible for the front-end
 app.use(express.static(path.join(__dirname, 'public')));
@@ -40,11 +45,6 @@ const sess = {
   };
 
   app.use(session(sess));
-
-  app.get('/',(req,res)=>{
-    res.render('homepage',{hotels: hotelList})
-  })
-
 
   sequelize.sync({force:true}).then(() => {
     app.listen(PORT, () => {
