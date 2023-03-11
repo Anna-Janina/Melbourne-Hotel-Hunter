@@ -1,15 +1,20 @@
 
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Home</a></li>
-            {{#if userloggedin}}
-            <li id=""><a href="/">Write review</a></li>
-
-            {{else}}
-            <li id="signin"><a href="/signin">Login</a></li>
-            <li id="signup"><a href="/signup">Sign-up</a></li>
-            {{/if}}
-        </ul>
+    <nav class="navbar navbar-expand-lg rounded static-top m-5" style="background-color: rgb(248, 234, 153);">
+        <div class="container">
+          <a class="navbar-brand text-dark" href="#">
+            <h1><strong>Melbourne Hotel Hunter</strong></h1>
+          </a>
+            <ul class="navbar-nav ms-auto" id="test">
+                <li class="nav-item">
+                    <a href="./index.html" class="btn btn-outline-dark text-light" style="background-color: rgb(241, 129, 72);" role="button" data-bs-toggle="button"><strong>Home</strong></a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-dark text-light m-5" style="background-color: rgb(241, 129, 72);" type="button"><strong>Sign Up</strong></button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-dark text-light m-5" style="background-color: rgb(241, 129, 72);" type="button"><strong>Login</strong></button>
+                </li>
+            </ul>
+        </div>
     </nav>
 
