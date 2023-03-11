@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: rgb(252, 255, 255);
+    background-color: rgb(252, 252, 250);
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 20px;
@@ -14,12 +14,26 @@ body {
 }
 
 .image {
-<<<<<<< HEAD
     background-size:cover;
     background-color: aliceblue;
 }
-=======
-    background-size: cover;
-    background-color: aliceblue;
+
+.row {
+    display: flex;
+    justify-content: center;
 }
->>>>>>> a84c22e1a21eae64d1dd8780ab1fbdb8fd38712b
+
+#test {
+    display: flex;
+    justify-content: end;
+}
+
+#middle-button {
+   
+    display: flex;
+    justify-content: center;
+}
+
+.margin {
+    margin: 10px;
+}
