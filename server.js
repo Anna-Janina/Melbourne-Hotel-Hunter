@@ -8,7 +8,7 @@ const path = require('path');
 require('dotenv').config();
 const {Hotel, Review, User} = require('./models/index');
 const routes = require('./controller');
-
+const  {transporter, mailOptions} = require('./config/email')
 
 //Initializing Express
 const app = express();
@@ -22,6 +22,14 @@ const hbs = exphbs.create({});
 app.use(express.json());
 
 app.use(express.Router())
+
+// transporter.sendMail(mailOptions, function(error, info){
+//   if (error) {
+//     console.log(error);
+//   } else {
+//     console.log('Email sent: ' + info.response);
+//   }
+// })
 
 //Defining Views engine for the app
 app.engine('handlebars',  hbs.engine);
@@ -46,6 +54,8 @@ const sess = {
 
   app.use(session(sess));
 
+
+  
   sequelize.sync({force:true}).then(() => {
     app.listen(PORT, () => {
       console.log(`App listening on port ${PORT}!`);
