@@ -4,7 +4,18 @@
 {{>title}}
 
   {{#each hotels as |hotel|}}
-    <div class="">
+
+          <div class="image card m-2 border-dark" id="one" style="width: 18rem; height: 19rem;">
+            <div class="image container mx-auto mt-3">
+                <img src="/images/{{hotel.image}}.jpeg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{hotel.name}}</h5>
+                <a href="#" class="btn btn-outline-dark text-light" style="background-color: rgb(241, 129, 72);">Reviews</a>
+            </div>
+        </div>
+
+    {{!-- <div class="">
         <div class="">
             <p>{{hotel.name}}</p> 
             <p>{{hotel.address}}</p> 
@@ -13,5 +24,5 @@
         <div class="">
             {{hotel.description}}
         </div>
-    </div>
+    </div> --}}
 {{/each}}

@@ -9,13 +9,14 @@ Hotel.init(
        type: DataTypes.INTEGER,
        allowNull: false,
        primaryKey: true,
+       autoIncrement:true,
       },
     name: {
        type: DataTypes.STRING,
        allowNull: false,
       },
     description: {
-       type: DataTypes.STRING,
+       type: DataTypes.TEXT,
       },
     address: {
        type: DataTypes.STRING,
@@ -23,13 +24,9 @@ Hotel.init(
     review: {
       type: DataTypes.STRING,
       },
-    user_email: {
-        type: DataTypes.STRING,
-        references: {
-          model: 'user',
-          key: 'email',
-        },
-      },
+    image: {
+      type: DataTypes.STRING,
+    }
     },
     {
     sequelize,
