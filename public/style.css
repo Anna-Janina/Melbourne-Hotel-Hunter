@@ -1,0 +1,45 @@
+
+
+body {
+    background-color: rgb(252, 252, 250);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}   
+
+.row {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+#middle-grid
+{
+   display: flex;
+   justify-content: center; 
+}
+.image {
+    background-size:cover;
+    background-color: aliceblue;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+#test {
+    display: flex;
+    justify-content: end;
+}
+
+#middle-button {
+   
+    display: flex;
+    justify-content: center;
+}
+
+.margin {
+    margin: 10px;
+}

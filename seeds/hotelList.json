@@ -24,7 +24,7 @@
         "image":"4"
     },
     {
-        "name":"Hilton Melbourne Little Queen Street",
+        "name":"Hilton Melbourne",
         "address":"18 Little Queen Street, Victoria 3000 Melbourne",
         "description":"Featuring a fitness centre and a bar, this 5-star hotel offers room service and a concierge service. The hotel will provide guests with air-conditioned rooms offering a desk, a coffee machine, a fridge, a safety deposit box, a flat-screen TV and a private bathroom with a shower. Hilton Melbourne Little Queen Street provides certain rooms with city views, and rooms have a kettle. At the accommodation each room is equipped with bed linen and towels. A buffet, continental or Full English/Irish breakfast is available daily at the property. At Hilton Melbourne Little Queen Street you will find a restaurant serving Italian and Australian cuisine. Vegetarian, vegan and gluten-free options can also be requested.",
         "image":"5"
@@ -36,13 +36,13 @@
         "image":"6"
     },
     {
-        "name":"InterContinental Melbourne The Rialto",
+        "name":"InterContinental Melbourne",
         "address":"495 Collins Street, 3000 Melbourne",
         "description":"Enjoy a cocktail at Bluestone Bar, warm up with our fitness facilities, or take a dip in our heated rooftop pool and jacuzzi, boasting panoramic city views out to the bay. When youre ready to explore, allow our experienced Concierge to direct you to the best kept secrets of Melbournes laneway dining and boutique shopping opportunities. The rooms and suites offer all the luxuries of a true city escape. Enjoy 24 hour in-room dining, mini-bar and coffee facilities, free Wi-Fi, Chromecast streaming capabilities, and InterContinental Cloud Beds for the perfect nights sleep. When reserving a room or suite with Club access, your exclusive Club InterContinental experience will include breakfast, all day refreshments, afternoon tea and evening canapes.",
         "image":"7"
     },
     {
-        "name":"Lancemore Crossley St. Melbourne",
+        "name":"Lancemore Crossley St.",
         "address":"51 Little Bourke Street, 3000 Melbourne",
         "description":"Lancemore Crossley St. Melbourne features air-conditioned rooms, a fitness centre, free WiFi and a terrace. This 5-star hotel offers room service and a 24-hour front desk. The accommodation offers airport transfers, while a car rental service is also available.",
         "image":"8"
@@ -60,7 +60,7 @@
         "image":"10"
     },
     {
-        "name":"Melbourne Marriott Hotel Docklands",
+        "name":"Melbourne Marriott Docklands",
         "address":"15 Waterfront Way, Docklands, Docklands, 3008 Melbourne",
         "description":"Melbourne Marriott Hotel Docklands has free bikes, outdoor swimming pool, a fitness centre and restaurant in Melbourne. Among the facilities at this property are a business centre and a concierge service, along with free WiFi throughout the property. The accommodation offers room service, a 24-hour front desk and currency exchange for guests.",
         "image":"11"
@@ -90,19 +90,19 @@
         "image":"15"
     },
     {
-        "name":"Platinum Apartments at Freshwater Place",
+        "name":"Platinum Freshwater Place",
         "address":"1 Freshwater Place, Southbank, 3006 Melbourne",
         "description":"Platinum Apartments at Freshwater Place offers modern self-contained accommodation. Each apartment provides free WiFi. All apartments have prime landmark views. The luxurious air-conditioned apartments will provide you with a spacious lounge, flat-screen TV with cable channels, DVD player and an iPod dock. You can prepare a meal in the fully equipped kitchen, which includes a microwave, dishwasher and a stovetop. Bathrooms include a shower and a bath, hairdryer and free toiletries. Some apartments have a balcony and Yarra River views.",
         "image":"16"
     },
     {
-        "name":"Platinum Apartments at The Victoria Rooftop Penthouse",
+        "name":"Platinum Victoria  Penthouse",
         "address":"4201/ 100 Harbour Esplanade, Docklands, 3008 Melbourne",
         "description":"Platinum Apartments at The Victoria Rooftop Penthouse offers city views and a terrace. Free WiFi is featured throughout the property and private parking is available on site. The air-conditioned apartment consists of 4 bedrooms, a living room, a fully equipped kitchen with a fridge and a coffee machine, and 2 bathrooms with a bidet and a shower. Towels and bed linen are available in the apartment. A bicycle rental service is available at the apartment.",
         "image":"17"
     },
     {
-        "name":"Pullman Melbourne on Swanston",
+        "name":"Pullman on Swanston",
         "address":"195 Swanston Street, 3000 Melbourne",
         "description":"All spacious guest rooms feature a personalised digital concierge service, Arora bathroom amenities, air-conditioning and a flat-screen TV. Breakfast and light meals are on offer at the hotels café or you can enjoy breakfast and dinner daily at Eva's Restaurant & Bar.",
         "image":"18"
@@ -114,7 +114,7 @@
         "image":"19"
     },
     {
-        "name":"Quay West Suites Melbourne",
+        "name":"Quay West Suites",
         "address":"Southgate Avenue, Southbank, 3000 Melbourne",
         "description":"This 5-star hotel offers spacious suites with LCD TVs, balconies, and panoramic views over Yarra River. Quay West Suites Melbourne provides suites that include fully equipped kitchens or kitchenettes, dining areas, and a furnished balcony. Guests can enjoy using the 15 m indoor lap pool, spa, sauna, and fitness center. Meals and drinks are served indoors or outdoors on a spacious terrace at the hotels Jarrah Restaurant & Bar. The menu features seasonal specialities such as fresh local seafood, light pasta, simple grills and steaks.",
         "image":"20"
@@ -132,7 +132,7 @@
         "image":"22"
     },
     {
-        "name":"Sofitel Melbourne On Collins",
+        "name":"Sofitel On Collins",
         "address":"25 Collins Street, 3000 Melbourne",
         "description":"Sofitel Melbourne on Collins offers 363 luxurious rooms and suites located on levels 36 - 50 of the hotel. Each room offers floor-to-ceiling windows offering panoramic views over the city with the highlight overlooking the Yarra River and out to Port Phillip Bay. With the accommodation having been refurbished in 2022, all rooms offer chic modern furnishings blending the heart of Melbourne with the soul of Sofitel's French identity. Each room offers a 55 inch flat screen TV with Chromecast capability and paid movie channels, In-Room tablet for ordering Room Service or other hotel services, coffee machine and black out shutters for a restful nights sleep. Available exclusively to guests booking rooms which include access, our Club Sofitel executive lounge is the highest in the city located on the 35th floor and offering everything from ",
         "image":"23"
