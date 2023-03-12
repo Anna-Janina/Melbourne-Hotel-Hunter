@@ -1,0 +1,24 @@
+[
+  {
+    "id": "Review ID",
+    "header": "Hotel Name",
+    "description": "Hotel Description.",
+    "user_email": "user@123.com",
+    "hotel_id": "1"
+
+  },
+  {
+    "id": "Review ID",
+    "header": "Hotel Name",
+    "description": "Hotel Description.",
+    "user_email": "user@123.com",
+    "hotel_id": "2"
+  },
+  {
+    "id": "Review ID",
+    "header": "Hotel Name",
+    "description": "Hotel Description.",
+    "user_email": "user@123.com",
+    "hotel_id": "3"
+  }
+]
