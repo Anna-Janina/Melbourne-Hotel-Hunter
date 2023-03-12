@@ -43,3 +43,7 @@ body {
 .margin {
     margin: 10px;
 }
+
+.right-side {
+    margin-left: 20px;
+}
