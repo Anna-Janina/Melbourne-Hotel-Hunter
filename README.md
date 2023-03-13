@@ -1,54 +1,30 @@
- Melbourne-Hotel-Hunter
--
+# Melbourne Hotel Hunter
 
-**Project Description**
--
-- Create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
+## Description
 
-**User Story**
-- (to Complete)
+Welcome to Melbourne Hotel Reviews, a website that provides a platform for users to review and rate 5-star hotels in Melbourne, Australia.
 
-**Acceptance Criteria**
--
-- Use Node.js and Express.js to create a RESTful API.
+The website is designed to make it easy for users to share their experiences and opinions about the hotels they've stayed in, and to help other travelers make informed decisions when choosing a place to stay in Melbourne.
 
-- Use Handlebars.js as the template engine.
+Users can browse reviews and ratings from other users to get a sense of the quality and value of each hotel.
 
-- Use MySQL and the Sequelize ORM for the database.
+Each hotel listing includes detailed information about the property, photos, and location. Users can leave a written review on each hotel.
 
-- Have both GET and POST routes for retrieving and adding new data.
+Overall, Melbourne Hotel Reviews is a valuable resource for anyone who is looking to book a 5-star hotel in Melbourne, and who wants to hear from other travelers about their experiences and recommendations.
 
-- Use at least one new library, package, or technology that we haven’t discussed.
+## How to run the application
 
-- Have a folder structure that meets the MVC paradigm.
+#### Prerequisites:
+- Node JS
+- MYSQL server
 
-- Include authentication (express-session and cookies).
+#### Steps:
 
-- Protect API keys and sensitive information with environment variables.
-
-- Be deployed using Heroku (with data).
-
-- Have a polished UI.
-
-- Be responsive.
-
-- Be interactive (i.e., accept and respond to user input).
-
-- Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
-
-- Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
-
-**Deployed link & Screenshot**
--
-- (Put Link Here)
-
-(Put Screenshot Here)
-
-
-**References & Resources**
--
-- https://www.google.com.au/
-- https://www.youtube.com/
-- https://developer.mozilla.org/en-US/
-- https://courses.bootcampspot.com/courses/2384/assignments/44563?module_item_id=828465
-
+1) Clone this repository to your machine by typing `git@github.com:Anna-Janina/Melbourne-Hotel-Hunter.git` on the terminal.
+2) Install all dependencies by typing `npm install`.
+3) Initialize SQL server by typing `mysql -u <username> -p<password>`.
+4) Go to .\db directory and run schema.sql `source schema.sql`.
+5) Change MySQL username and password in Connection.js file or .env file to match your credentials.
+6) Create a .env file in home directory and set the value of SESSION_KEY variable there.
+6) Seed the database by typing `node seeds\seed.js` in home directory.
+7) Run the application by typing `node server.js` in the terminal.

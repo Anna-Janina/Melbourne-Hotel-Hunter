@@ -3,15 +3,20 @@
 
 {{>title}}
 
+<div class="row" id="middle-grid">
+
   {{#each hotels as |hotel|}}
-    <div class="">
-        <div class="">
-            <p>{{hotel.name}}</p> 
-            <p>{{hotel.address}}</p> 
-            <img src="/image/{{hotel.image}}.jpeg" alt="a" >
+
+          <div class="image card m-2 border-dark" id="one" style="width: 18rem; height: 19rem;">
+            <div class="image container mx-auto mt-3">
+                <img src="/images/{{hotel.image}}.jpeg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+                <h6 class="card-title">{{hotel.name}}</h6>
+                <a href="/review/{{hotel.id}}" class="btn btn-outline-dark text-light" style="background-color: rgb(241, 129, 72);">Reviews</a>
+            </div>
         </div>
-        <div class="">
-            {{hotel.description}}
-        </div>
-    </div>
 {{/each}}
+</div>
+
+{{>page1button}}

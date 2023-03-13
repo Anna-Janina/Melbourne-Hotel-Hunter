@@ -14,35 +14,33 @@
 
 
 <body>
-    <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color: rgb(36, 37, 7);">
-        <nav class="navbar rounded" style="background-color: rgb(246, 197, 173);">
+    <nav class="navbar navbar-expand-lg rounded static-top m-5" style="background-color: rgb(246, 197, 173);">
+        <div class="container">
+          <a class="navbar-brand text-dark" href="#">
             <h1><strong>Melbourne Hotel Hunter</strong></h1>
-            <a href="./index.html" class="btn btn-outline-dark text-light" style="background-color: rgb(241, 129, 72);" role="button" data-bs-toggle="button"><strong>Homepage</strong></a>
-        </nav>
-    </div>
-
-
-    <!-- <div class="row"> -->
-    <div class="container text-center">
-        <div class="row align-items-center">
-            <!-- <div class="col"> -->
-            <div class="card" style="width: 30%;">
-                <img src="./assets/images/Skyline.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        <div>
-
-
-        <div class="row align-items-center">
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="./index.html" class="btn btn-outline-dark text-light" style="background-color: rgb(241, 129, 72);" role="button" data-bs-toggle="button"><strong>Home</strong></a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-          </div>
+    <main>
           
-        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <div class="card" style="width: 100%;">
+                    <img src="./assets/images/Skyline.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="hotel-title">Hotel title</p>
+                        <p class="hotel-address">Hotel address</p>
+                        <p class="hotel-description">Hotel description</p>
+                    </div>
+                </div>
+              </div>
 
     <div class="signup-popup">
       <div class="signup-content">
@@ -59,31 +57,29 @@
       </div>  
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Sign up & Login</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Sumbit</button>
+              <div class="col-sm">
+                <div class="row align-items-center mb-2">
+                    <a href="#" class="btn" style="background-color: rgb(246, 197, 173);">Write A Review</a>
+                    <p class="reviews"></p>
+                </div>
+                <textarea id ="code" rows="2" cols="200" disabled="disabled" style="width:100%; height:auto">Hello</textarea>
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Review</th>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+    
 
-
-    </div>
-
-
-
-
+    </main>
 
 </body>

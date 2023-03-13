@@ -9,11 +9,12 @@ Review.init(
        type: DataTypes.INTEGER,
        allowNull: false,
        primaryKey: true,
+       autoIncrement:true,
       },
-    description: {
-       type: DataTypes.STRING,
+    review: {
+       type: DataTypes.TEXT,
       },
-    header: {
+    heading: {
        type: DataTypes.STRING,
       },
     user_email: {
