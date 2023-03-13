@@ -1,12 +1,5 @@
-const signupPopup = document.querySelector('.signup-popup');
-const signupButton = document.querySelector('.signup-button');
-const closeButton = document.querySelector('.close-button');
-
-
-signupButton.addEventListener('click',() => {
-    signupPopup.style.display = 'block';
-});
-
-closeButton.addEventListener('click', () => {
-    signupPopup.style.display = 'none';
-});
+document.getElementById("exit").addEventListener("click", close)
+function close(){
+    document.getElementById("loginModal").classList.add("hide")
+} 
+document.addEventListener
