@@ -16,6 +16,20 @@ const app = express();
 //Defining PORT which will be used by the app
 const PORT = process.env.PORT || 3001;
 
+const sess = {
+  secret: process.env.SESSION_SECRET,
+  cookie: {
+    maxAge: 60 * 60 * 1000,
+    httpOnly: true,
+    secure: false,
+    sameSite: 'strict',
+  },
+  resave: false,
+  saveUninitialized: true,
+};
+
+app.use(session(sess));
+
 const hbs = exphbs.create({});
 
 //Using JSON middlewhere to parse JSON files in requests
@@ -40,19 +54,6 @@ app.use(routes);
 app.use(express.static(path.join(__dirname, 'public')));
 // app.use(require('./controller/routes'));
 
-const sess = {
-    secret: process.env.SESSION_SECRET,
-    cookie: {
-      maxAge: 60 * 60 * 1000,
-      httpOnly: true,
-      secure: false,
-      sameSite: 'strict',
-    },
-    resave: false,
-    saveUninitialized: true,
-  };
-
-  app.use(session(sess));
 
 
   
