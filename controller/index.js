@@ -5,7 +5,7 @@ const signupRoute = require('./api/sign-up');
 const signoutRoute = require('./api/sign-out');
 const reviewRoute = require('./api/review');
 
-const homeRoute = require('./homeRoute');
+const homeRoute = require('./homeroute');
 
 router.use('/', homeRoute);
 router.use('/signin', signinRoute);
