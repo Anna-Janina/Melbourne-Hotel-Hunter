@@ -43,3 +43,8 @@ body {
 .margin {
     margin: 10px;
 }
+
+.word-wrap
+{
+    word-wrap: break-word;
+}
