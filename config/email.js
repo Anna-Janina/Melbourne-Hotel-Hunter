@@ -29,12 +29,12 @@ Overall, Melbourne Hotel Reviews is a valuable resource for anyone who is lookin
 `
   };
   
-//   transporter.sendMail(mailOptions, function(error, info){
-//     if (error) {
-//       console.log(error);
-//     } else {
-//       console.log('Email sent: ' + info.response);
-//     }
-//   });
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
 
   module.exports = {transporter, mailOptions}

@@ -44,7 +44,7 @@ router.post('/',async (req,res)=>{
               
               const mailOptions = {
                 from: 'mebournehotelhunter@gmail.com',
-                to: `${req.body.email}`,
+                to: req.body.email,
                 subject: 'Welcome to Melboure Hotel Hunter!',
                 text: `
                 
@@ -60,6 +60,14 @@ router.post('/',async (req,res)=>{
             
             `
               };
+            
+              transporter.sendMail(mailOptions, function(error, info){
+                if (error) {
+                  console.log(error);
+                } else {
+                  console.log('Email sent: ' + info.response);
+                }
+              });
             
             res.redirect('/')
         }
