@@ -45,7 +45,12 @@ function signup()
     {
         document.getElementById('error-message').value = "Passwords dont match";
         return
-    }    
+    }
+    else if (firstname == null || lastname == null || email == null || password == null || rePassword == null)
+    {
+        document.getElementById('error-message').value = "Fill out all information";
+        return
+    }
     fetch('/signup', {
         method: 'POST',
         headers: {
