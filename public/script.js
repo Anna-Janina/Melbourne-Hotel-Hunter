@@ -41,16 +41,17 @@ function signup()
     const password = document.getElementById('SignupPassword').value;
     const rePassword = document.getElementById('reEnterPassword').value;
 
-    if (password != rePassword)
-    {
-        document.getElementById('error-message').value = "Passwords dont match";
-        return
-    }
-    else if (firstname == null || lastname == null || email == null || password == null || rePassword == null)
-    {
-        document.getElementById('error-message').value = "Fill out all information";
-        return
-    }
+    // if ((password != rePassword) || (password.length < 10))
+    // {
+    //     document.getElementById('error-message').value = "Passwords dont match or length less than 10";
+    //     return
+    // }
+    // else if (firstname =="" || lastname=="" || email=="" || password=="" || rePassword =="")
+    // {
+    //     console.log('some fields are empty')
+    //     document.getElementById('error-message').value = "Fill out all information";
+    //     return
+    // }
     fetch('/signup', {
         method: 'POST',
         headers: {
@@ -74,6 +75,10 @@ function signup()
         console.log(data)
         if (data == 'Email already exist')
         {document.getElementById('error-message').value = "Email already exist";}
+        else if (data == 'Fill out all fields')
+        {
+            document.getElementById('error-message').value = "Fill out all fields";
+        }
         else
         {
             window.location.replace('/')
@@ -124,7 +129,6 @@ if (document.getElementById("submit-review"))
 {
 
 document.getElementById("submit-review").addEventListener("click", (event)=>{
-    console.log("review clicked")
     submitReview()});
 }
 
@@ -132,7 +136,6 @@ if (document.getElementById("submit-signup"))
 {
 
 document.getElementById("submit-signup").addEventListener("click", (event)=>{
-    console.log("signup clicked")
     signup()});
 }
 
