@@ -48,5 +48,5 @@ body {
 textarea {
     /* display: flex;
     justify-content: center; */
-    resize: none;  
+    resize: 100%;  
 }
