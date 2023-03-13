@@ -1,26 +1,17 @@
+const {User, Review,Hotel} = require('../models/');
 const sequelize = require('../config/connection');
-const { User, Review, Hotel } = require('../models');
+const hotelList = require('./hotelList.json');
+const userList = require('./userData.json');
+const review = require('./reviewData.json');
 
-const hotelData = require('./hotelList.json');
-const userData = require('./userData.json');
-const reviewData = require('./reviewData.json');
 
-const seedDatabase = async () => {
-  await sequelize.sync({ force: true });
+async function sync ()
+{
+    await sequelize.sync({force:true});
+    await Hotel.bulkCreate(hotelList)
+    await User.bulkCreate(userList)
+    await Review.bulkCreate(review)
 
-  const users = await User.bulkCreate(userData, {
-    individualHooks: true,
-    returning: true,
-  });
+}
 
-//   for (const hotel of reviewData) {
-//     await Review.create({
-//       ...Review,
-//       user_id: users[Math.floor(Math.random() * users.length)].id,
-//     });
-//   }
-
-  process.exit(0);
-};
-
-seedDatabase();
+sync()
