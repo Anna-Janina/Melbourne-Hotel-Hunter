@@ -1,8 +1,6 @@
-const express = require('express')
-const router = require('express').Router();
-const {User}  = require('../../models');
-const app = express();
-
+const express = require('express')//Import express module
+const router = require('express').Router(); //Import router function
+const {User}  = require('../../models'); //Import user object
 
 
 router.get('/',async (req,res)=>{

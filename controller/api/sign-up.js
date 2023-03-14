@@ -1,8 +1,8 @@
-const express = require('express')
-const router = require('express').Router();
-const {User}  = require('../../models');
-const nodemailer = require('nodemailer');
-
+const express = require('express') //Import express module
+const router = require('express').Router();//Import router function
+const {User}  = require('../../models'); //Import user object
+const nodemailer = require('nodemailer'); //Import nodemailer
+var validator = require("email-validator"); //Email validator tool
 const app = express();
 
 
@@ -18,13 +18,22 @@ router.post('/',async (req,res)=>{
     const checkIfEmailAlreadyExist = await User.findOne({where:{email:req.body.email}})
     if (checkIfEmailAlreadyExist == null)
     {
-    if(req.body.firstname == "" || req.body.firstname == "" || req.body.password.length < 10 || req.body.password == "")
+    if(req.body.firstname == "" || req.body.firstname == "" || req.body.password == "")
     {
         res.send("Fill out all fields")
     }
+    else if ( req.body.password.length < 10)
+        {
+            res.send("Password length must be atleast 10 characters")
 
+        }
     else
     {
+        // validate if the email is in correct format
+        if (validator.validate(req.body.email))
+        {
+
+        
         let newUser = await User.create({
             firstname:req.body.firstname,
             lastname: req.body.lastname,
@@ -65,6 +74,7 @@ router.post('/',async (req,res)=>{
             `
               };
             
+            //funtion to send email to the user
               transporter.sendMail(mailOptions, function(error, info){
                 if (error) {
                   console.log(error);
@@ -74,6 +84,10 @@ router.post('/',async (req,res)=>{
               });
             
             res.redirect('/')
+        }
+        else {
+            res.send("Email address is not valid")
+        }
         }
     
     }

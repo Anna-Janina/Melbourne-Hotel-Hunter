@@ -63,10 +63,20 @@ function signup()
     .then((data)=>{
         console.log(data)
         if (data == 'Email already exist')
-        {document.getElementById('error-message').value = "Email already exist";}
+        {document.getElementById('error-message2').textContent = "Email already exist";}
         else if (data == 'Fill out all fields')
         {
-            document.getElementById('error-message').value = "Fill out all fields";
+            document.getElementById('error-message2').textContent = "Fill out all fields";
+        }
+        else if (data == "Password length must be atleast 10 characters")
+        {
+            document.getElementById('error-message2').textContent = "Password length must be atleast 10 characters";
+
+        }
+        else if (data == 'Email address is not valid')
+        {
+            document.getElementById('error-message2').textContent = "Email address is not valid";
+
         }
         else
         {
@@ -118,6 +128,7 @@ if (document.getElementById("submit-review"))
 {
 
 document.getElementById("submit-review").addEventListener("click", (event)=>{
+    event.preventDefault()
     submitReview()});
 }
 
@@ -125,6 +136,7 @@ if (document.getElementById("submit-signup"))
 {
 
 document.getElementById("submit-signup").addEventListener("click", (event)=>{
+    event.preventDefault()
     signup()});
 }
 
