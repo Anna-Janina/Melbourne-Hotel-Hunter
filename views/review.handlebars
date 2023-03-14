@@ -19,14 +19,14 @@
         <div class="col-sm">
           {{#if userloggedin}}
             <div class="row align-items-center mb-2">
-                <a class="btn p-2" style="background-color: rgb(246, 197, 173);">Write A Review</a>
+                <a class="btn p-2 bg-peach">Write A Review</a>
                 <p class="reviews"></p>
             </div>
             <p>Review title</p>
             <input id ="review-heading" type="text" style="width:100%; height:auto"></input>
             <p class="mt-2">Write your review here</p>            
             <textarea id ="code" rows="2" cols="200" style="width:100%; height:auto"></textarea>
-            <a id="submit-review" data-id={{hotel.id}} class="btn p-1" style="background-color: rgb(246, 197, 173);">Submit</a>
+            <a id="submit-review" data-id={{hotel.id}} class="btn p-1 bg-peach">Submit</a>
             <p id="review-submit-message"></p>
             {{!-- ///////////////////////////////Reviews/////////////////////////////////////////// --}}
             
@@ -38,7 +38,7 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                        <th scope="col" class="bg" style="background-color: rgb(246, 197, 173);">{{review.heading}}</th>
+                        <th scope="col" class="bg bg-peach">{{review.heading}}</th>
                         </tr>
                     </thead>
                     <tbody>

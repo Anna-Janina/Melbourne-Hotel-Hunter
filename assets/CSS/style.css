@@ -46,7 +46,13 @@ body {
 }
 
 textarea {
-    /* display: flex;
-    justify-content: center; */
     resize: 100%;  
+}
+
+.bg-peach {
+    background-color: rgb(246, 197, 173);
+}
+
+.bg-orange {
+    background-color: rgb(241, 129, 72);
 }
