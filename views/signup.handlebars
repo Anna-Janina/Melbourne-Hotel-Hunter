@@ -1,6 +1,6 @@
 {{>header}}
 
-        <div class="modal-body sign-in-div bg-peach">
+        <div class="modal-body sign-in-div bg-peach w-75 my-5 mx-auto">
            <h4 class="mb-3">Sign-up</h4>
           <form>
               <div class="form-group">
@@ -25,9 +25,16 @@
                   <label for="ReEnterPassword">Re Enter Password</label>
                   <input type="password" class="form-control" id="reEnterPassword" placeholder="Re Enter Password">
                 </div>
-                <div class="text-center">
-            <a id="submit-signup" class="btn p-1 bg-orange">Submit</a>
 
+              <div class="text-center">
+                <button id="submit-signup" type="submit" class="btn btn-outline-dark text-light m-1 bg-orange">Signup</button>
+              </div>
+
+                {{!-- <div class="text-center">
+            <a id="submit-signup" class="btn p-1 bg-orange">Submit</a>
+                </div> --}}
             </form>
             <p id="error-message"></p>
         </div>
+
+{{>footer}}

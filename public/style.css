@@ -32,6 +32,12 @@ body {
     justify-content: end;
 }
 
+.text-center
+{
+    margin:auto;
+    background-color: rgb(246, 197, 173);
+    width: 100%;
+}
 #middle-button {
     display: flex;
     justify-content: center;
@@ -56,3 +62,10 @@ textarea {
 .bg-orange {
     background-color: rgb(241, 129, 72);
 }
+
+@media screen and (max-width: 480px) {
+    .title-text {
+      font-size: large;
+    }
+  }
+  
