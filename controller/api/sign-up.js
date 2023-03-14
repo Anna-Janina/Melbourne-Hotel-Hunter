@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer'); //Import nodemailer
 var validator = require("email-validator"); //Email validator tool
 const app = express();
 
-
+// GET /signup route to display signup page
 router.get('/',async(req,res)=>{
     if (!req.session.userloggedin)
     {
@@ -13,15 +13,20 @@ router.get('/',async(req,res)=>{
     }
 })
 
+// POST /signup route to reveive user signup data
 router.post('/',async (req,res)=>{
 
+    //check if the user email address already exist in database
     const checkIfEmailAlreadyExist = await User.findOne({where:{email:req.body.email}})
+    //proceed if email address doesn't exitst
     if (checkIfEmailAlreadyExist == null)
     {
+    //check if the first name or last name of password fields are empty
     if(req.body.firstname == "" || req.body.firstname == "" || req.body.password == "")
     {
         res.send("Fill out all fields")
     }
+    //check if password strength is leass than 10
     else if ( req.body.password.length < 10)
         {
             res.send("Password length must be atleast 10 characters")
@@ -33,14 +38,17 @@ router.post('/',async (req,res)=>{
         if (validator.validate(req.body.email))
         {
 
-        
+
+        //create user account in the database
         let newUser = await User.create({
             firstname:req.body.firstname,
             lastname: req.body.lastname,
             email: req.body.email,
             password: req.body.password,
         })
+            //set the value if userloggedin to true in session
             req.session.userloggedin = true;
+            //set the value of email in user session
             req.session.email = req.body.email;
 
             //Defining nodemailer connection options
@@ -49,7 +57,7 @@ router.post('/',async (req,res)=>{
                 service: 'gmail',
                 auth: {
                   user: 'mebournehotelhunter@gmail.com',
-                  pass: 'llyxeynlzauarudi'
+                  pass: process.env.EMAIL_PASSWORD
                 }
               });
             
