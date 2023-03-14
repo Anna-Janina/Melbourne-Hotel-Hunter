@@ -86,7 +86,7 @@ router.post('/',async (req,res)=>{
             res.redirect('/')
         }
         else {
-            res.send("Email address is not valid")
+            res.send("Email address is not correct")
         }
         }
     
