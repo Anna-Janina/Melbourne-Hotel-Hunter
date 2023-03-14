@@ -12,10 +12,11 @@ const transporter = nodemailer.createTransport({
   
   //Defining nodemailer email options
   const mailOptions = {
-    from: 'engr.zafarahmed@gmail.com',
-    to: 'zafar_Fast@hotmail.com',
+    from: 'mebournehotelhunter@gmail.com',
+    to: '',
     subject: 'Sending Email using Node.js',
-    text: `Welcome to Melboure Hotel Hunter!
+    //Text of the email
+    text: `Welcome to Melboure Hotel Hunter! 
     
     Welcome to Melbourne Hotel Hunter, a website that provides a platform for users to review and rate 5-star hotels in Melbourne, Australia.
 

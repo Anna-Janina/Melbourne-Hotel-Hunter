@@ -34,6 +34,8 @@ router.post('/',async (req,res)=>{
             req.session.userloggedin = true;
             req.session.email = req.body.email;
 
+            //Defining nodemailer connection options
+
             const transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
@@ -41,7 +43,9 @@ router.post('/',async (req,res)=>{
                   pass: 'llyxeynlzauarudi'
                 }
               });
-              
+            
+              //Defining nodemailer email options
+
               const mailOptions = {
                 from: 'mebournehotelhunter@gmail.com',
                 to: req.body.email,

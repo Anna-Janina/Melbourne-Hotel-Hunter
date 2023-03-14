@@ -6,7 +6,7 @@ const signoutRoute = require('./api/sign-out'); //Import sign-out route
 const reviewRoute = require('./api/review'); //Import review route
 const homeRoute = require('./homeroute'); // Import home route
 
-//Adding add routes to the Router middleware
+//Adding routes to the Router middleware
 router.use('/', homeRoute);
 router.use('/signin', signinRoute);
 router.use('/signup', signupRoute);

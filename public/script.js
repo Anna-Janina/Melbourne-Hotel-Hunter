@@ -41,17 +41,6 @@ function signup()
     const password = document.getElementById('SignupPassword').value;
     const rePassword = document.getElementById('reEnterPassword').value;
 
-    // if ((password != rePassword) || (password.length < 10))
-    // {
-    //     document.getElementById('error-message').value = "Passwords dont match or length less than 10";
-    //     return
-    // }
-    // else if (firstname =="" || lastname=="" || email=="" || password=="" || rePassword =="")
-    // {
-    //     console.log('some fields are empty')
-    //     document.getElementById('error-message').value = "Fill out all information";
-    //     return
-    // }
     fetch('/signup', {
         method: 'POST',
         headers: {
