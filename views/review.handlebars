@@ -26,7 +26,11 @@
             <input id ="review-heading" type="text" style="width:100%; height:auto"></input>
             <p class="mt-2">Write your review here</p>            
             <textarea id ="code" rows="2" cols="200" style="width:100%; height:auto"></textarea>
-            <a id="submit-review" data-id={{hotel.id}} class="btn p-1 bg-peach">Submit</a>
+
+            <div >
+                <button id="submit-review" data-id={{hotel.id}} type="submit" class="btn btn-outline-dark text-light m-1 bg-orange">Submit</button>
+            </div>
+
             <p id="review-submit-message"></p>
             {{!-- ///////////////////////////////Reviews/////////////////////////////////////////// --}}
             
