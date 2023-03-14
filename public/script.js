@@ -41,6 +41,11 @@ function signup()
     const password = document.getElementById('SignupPassword').value;
     const rePassword = document.getElementById('reEnterPassword').value;
 
+    if (password != rePassword)
+    {
+        document.getElementById('error-message2').textContent = "Passwords do not match";
+        return
+    }
     fetch('/signup', {
         method: 'POST',
         headers: {

@@ -49,7 +49,18 @@
                 </table>
           {{/each}}
           {{else}}
+          {{#if userloggedin}}
+          <h3>Reviews</h3>
+
+          <br>
+          <br>
           <h6>Be the first to write the review for this hotel!.</h6>
+          {{else}}
+          <h3>Reviews</h3>
+          <br>
+          <br>
+           <h6>Be the first to write the review for this hotel!. <a href="/signin"> Sign-in</a> or <a href="/signup"> Sign-up</a></h6>
+           {{/if}}
           {{/if}}
 
     </div>
