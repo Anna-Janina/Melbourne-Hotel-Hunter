@@ -37,8 +37,9 @@
               {{#each review as |review|}}
                 <table class="table table-bordered">
                     <thead>
-                        <tr>
-                        <th scope="col" class="bg bg-peach">{{review.heading}}</th>
+                        <tr class>
+                        <th scope="col" class="bg bg-peach flex-box"><span>{{review.heading}}</span> <span> by {{review.firstname}} {{review.lastname}}</span></th>
+                        
                         </tr>
                     </thead>
                     <tbody>

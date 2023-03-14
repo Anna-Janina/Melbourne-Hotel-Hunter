@@ -28,7 +28,6 @@ const sess = {
 //Using session variable in middleware
 app.use(session(sess));
 
-
 const hbs = exphbs.create({});
 
 //Using JSON middlewhere to parse JSON files in requests
