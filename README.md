@@ -1,5 +1,11 @@
 # Melbourne Hotel Hunter
 
+## Project Team
+- Zafar Ahmed
+- Hinal Patel
+- Anna Marcus
+- Conor Boulter
+
 ## Description
 
 Welcome to Melbourne Hotel Reviews, a website that provides a platform for users to review and rate 5-star hotels in Melbourne, Australia.
@@ -28,3 +34,14 @@ Overall, Melbourne Hotel Reviews is a valuable resource for anyone who is lookin
 6) Create a .env file in home directory and set the value of SESSION_KEY variable there.
 6) Seed the database by typing `node seeds\seed.js` in home directory.
 7) Run the application by typing `node server.js` in the terminal.
+
+## Deployed Application and Screenshots
+
+#### Link to the deployed application
+
+### Screenshots
+
+#### **Home Page:**
+
+
+
