@@ -6,15 +6,15 @@
           </a>
             <ul class="navbar-nav ms-auto" id="test">
                 {{#if userloggedin}}
-                {
+                
                 <li class="nav-item">
-                <button class="btn btn-outline-dark text-light m-1" style="background-color: rgb(241, 129, 72);" type="button"><strong>Sign Out</strong></button>
+                <a href="/signout"><button  class="btn btn-outline-dark text-light m-1" style="background-color: rgb(241, 129, 72);" type="button"><strong>Sign Out</strong></button></a>
                 </li>
-                }
+                
                 {{else}}
                 <li class="nav-item">
-                <button class="btn btn-outline-dark text-light m-1" style="background-color: rgb(241, 129, 72);" type="button"><strong>Sign Up</strong></button>
-                <button class="btn btn-outline-dark text-light m-1" style="background-color: rgb(241, 129, 72);" type="button"><strong>Sign In</strong></button>
+                <a href="/signup"><button  class="btn btn-outline-dark text-light m-1" style="background-color: rgb(241, 129, 72);" type="button"><strong>Sign Up</strong></button></a>
+                <a href="/signin"><button  class="btn btn-outline-dark text-light m-1" style="background-color: rgb(241, 129, 72);" type="button"><strong>Sign In</strong></button></a>
                 </li>
                 {{/if}}
             </ul>

@@ -4,6 +4,12 @@ const {User}  = require('../../models');
 const app = express();
 
 
+router.get('/',async(req,res)=>{
+    if (!req.session.userloggedin)
+    {
+        res.render('signup', {userloggedin: req.session.userloggedin})
+    }
+})
 
 router.post('/',async (req,res)=>{
 
@@ -22,7 +28,7 @@ router.post('/',async (req,res)=>{
     }
     else
     {
-        res.send("Email address already exist")
+        res.send("Email already exist")
     }
   })
 

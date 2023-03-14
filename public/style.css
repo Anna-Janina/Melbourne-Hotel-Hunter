@@ -44,7 +44,9 @@ body {
     margin: 10px;
 }
 
-.word-wrap
+.sign-in-div
 {
-    word-wrap: break-word;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
 }
