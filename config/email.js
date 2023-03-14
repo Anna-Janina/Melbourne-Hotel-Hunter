@@ -1,7 +1,7 @@
-const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer'); //Importing Nodemailer module
 
 
-//--------------------------------NodeMailer----------------------------------//
+//Defining nodemailer connection options
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -10,6 +10,7 @@ const transporter = nodemailer.createTransport({
     }
   });
   
+  //Defining nodemailer email options
   const mailOptions = {
     from: 'engr.zafarahmed@gmail.com',
     to: 'zafar_Fast@hotmail.com',
@@ -28,7 +29,8 @@ Overall, Melbourne Hotel Reviews is a valuable resource for anyone who is lookin
 
 `
   };
-  
+
+  //Sending email
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
       console.log(error);
@@ -37,4 +39,4 @@ Overall, Melbourne Hotel Reviews is a valuable resource for anyone who is lookin
     }
   });
 
-  module.exports = {transporter, mailOptions}
+  module.exports = {transporter, mailOptions} //Exporting mail modules

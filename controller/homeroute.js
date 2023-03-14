@@ -1,11 +1,12 @@
-const router = require('express').Router();
-const { Review, User, Hotel } = require('../models');
+const router = require('express').Router(); //Importing Express router function
+const { Review, User, Hotel } = require('../models'); //Importing hotel class object 
 
+//Route for homepage
 router.get('/',async (req,res)=>{
 
-    const hotels = await Hotel.findAll()
-    const j = hotels.map((i) => i.get({ plain: true }));
-    res.render('homepage',{hotels: j, userloggedin: req.session.userloggedin})
+    const hotels = await Hotel.findAll() //Fetch list of all rows from Hotel table in databse
+    const j = hotels.map((i) => i.get({ plain: true })); //Convert the hotels object into usable JS object
+    res.render('homepage',{hotels: j, userloggedin: req.session.userloggedin}) //Render homepage handlebar and send to client
   })
 
-module.exports = router
+module.exports = router //Export Router 
