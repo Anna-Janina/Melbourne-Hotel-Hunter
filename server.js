@@ -37,17 +37,17 @@ app.use(express.json());
 app.use(express.Router())
 
 //Defining Views engine for the app
-app.engine('handlebars',  hbs.engine);
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(routes);
 
 //Definig Express tatic middlewhere to make Public folder accessible for the front-end
 app.use(express.static(path.join(__dirname, 'public')));
 
-  
+
 //Syncing sequzlize with the database
-  sequelize.sync().then(() => {
-    app.listen(PORT, () => {
-      console.log(`App listening on port ${PORT}!`); //Listen on 'PORT'
-    });
-    });
+sequelize.sync().then(() => {
+  app.listen(PORT, () => {
+    console.log(`App listening on port ${PORT}!`); //Listen on 'PORT'
+  });
+});

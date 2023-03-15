@@ -3,21 +3,21 @@ const { Review, User, Hotel } = require('../../models'); //Import Hotel, User an
 const sequelize = require('../../config/connection'); // Adding MySQL daatbase connection
 
 //GET Route for /review/id page
-router.get('/:id',async (req,res)=>{
-    let hotel = await Hotel.findOne({where:{id: req.params.id}}) //Find the hotel with the ID given in the prams
-    hotel = hotel.get({ plain: true }) //Convert hotel object to usable JS object
-    // const reviews = await Review.findAll({where:{hotel_id:hotel.id}}) //Find all reviews for the hotel found
-    const reviews = await sequelize.query(`SELECT * FROM Review JOIN User ON user_email = email WHERE hotel_id = ${hotel.id}`)
-    // const j = reviews.map((i) => i.get({ plain: true })); //Convert it into usable JS object
-    res.render('review',{hotel:hotel, review:reviews[0], userloggedin:req.session.userloggedin}) //Render page and send
-  })
+router.get('/:id', async (req, res) => {
+  let hotel = await Hotel.findOne({ where: { id: req.params.id } }) //Find the hotel with the ID given in the prams
+  hotel = hotel.get({ plain: true }) //Convert hotel object to usable JS object
+  // const reviews = await Review.findAll({where:{hotel_id:hotel.id}}) //Find all reviews for the hotel found
+  const reviews = await sequelize.query(`SELECT * FROM Review JOIN User ON user_email = email WHERE hotel_id = ${hotel.id}`)
+  // const j = reviews.map((i) => i.get({ plain: true })); //Convert it into usable JS object
+  res.render('review', { hotel: hotel, review: reviews[0], userloggedin: req.session.userloggedin }) //Render page and send
+})
 
 //POST Route for /review/id page
-router.post('/:id',async (req,res)=>{
+router.post('/:id', async (req, res) => {
   const review = await Review.create({ //Create new review in Database
     heading: req.body.heading,
     review: req.body.review,
-    hotel_id:req.params.id,
+    hotel_id: req.params.id,
     user_email: req.session.email,
   })
   res.send("Review submited") //Send confirmation to client
