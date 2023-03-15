@@ -22,7 +22,7 @@ router.post('/',async (req,res)=>{
     if (checkIfEmailAlreadyExist == null)
     {
     //check if the first name or last name of password fields are empty
-    if(req.body.firstname == "" || req.body.firstname == "" || req.body.password == "")
+    if(req.body.firstname == "" || req.body.firstname == "" || req.body.password == "" || req.body.email == "")
     {
         res.send("Fill out all fields")
     }
@@ -94,7 +94,7 @@ router.post('/',async (req,res)=>{
             res.redirect('/')
         }
         else {
-            res.send("Email address is not correct")
+            res.send("Email address is not valid")
         }
         }
     

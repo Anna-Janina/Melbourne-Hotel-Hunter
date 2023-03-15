@@ -73,7 +73,7 @@ function signup()
     
     .then((data)=>{
         console.log(data)
-        //display message to the user based on server response
+        //display message to the user based on server response and form validation at server end
         if (data == 'Email already exist')
         {document.getElementById('error-message2').textContent = "Email already exist";}
         else if (data == 'Fill out all fields')
